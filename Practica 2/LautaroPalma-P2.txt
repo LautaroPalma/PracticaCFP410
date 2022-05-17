@@ -1,0 +1,171 @@
+Practica 2 Lautaro Palma
+
+#Practica 2 Ejercicio 1
+car= input("Ingrese un caracter: ")
+if car=="a":
+    print("es vocal")
+elif car=="e":
+    print("es vocal")
+elif car=="i":
+    print("es vocal")
+elif car=="o":
+    print("es vocal")
+elif car=="u":
+    print("es vocal")
+else:
+    print("no es vocal")
+
+#Practica 2 Ejercicio 2
+num= int(input("Ingrese numero: "))
+if (num % 2 == 0):
+    print("es par")
+else:
+    print("es impar")
+
+#Practica 2 Ejercicio 3
+contador=0
+nombre= input("ingrese nombre ")
+while nombre != "juan":
+#    print("ingrese otro nombre")
+#    print(nombre)
+    nombre= input("ingrese otro nombre ")
+    contador +=1
+print("la cantidad de nombres es: ")
+print(contador)
+
+#Practica 2 Ejercicio 4
+contador= 0
+numero= input("ingrese un numero ")
+while numero != ".":
+    numero=int(numero)
+    contador = contador + numero
+    numero= input("ingrese otro numero ")
+print("la suma de los numeros es: ")
+print(contador)
+
+#Practica 2 Ejercicio 5
+contador= 0
+cantidad= 0
+promedio=0
+numero= input("ingrese un numero ")
+while numero != ".":
+    numero=int(numero)
+    cantidad= cantidad + 1
+    contador = contador + numero
+    numero= input("ingrese otro numero ")
+print("la suma de los numeros es: ")
+print(contador)
+promedio= (contador/cantidad)
+print("el promedio es ")
+print(promedio)
+
+#Practica 2 Ejercicio 6
+suma=0
+total=0
+numero= int(input("ingrese un numero "))
+for suma in range(numero):
+    suma= suma + 1
+    total= total+ suma
+print("la suma es ")
+print(total)
+
+#Practica 2 Ejercicio 6
+total=0
+numero= int(input("ingrese un numero "))
+total= int((numero*(numero+1))/2)
+print("la suma es ")
+print(total)
+
+#Practica 2 Ejercicio 7
+n1=int(input("ingrese nota "))
+n2=int(input("ingrese nota "))
+n3=int(input("ingrese nota "))
+promedio=(n1+n2+n3)/3
+if((n1>=6)and(n2>=6)and(n3>=6)and (promedio>=8)):
+    print("promociona")
+else:
+    print("no promociona")
+print(promedio)
+
+#Practica 2 Ejercicio 8
+import random
+num = random.randint (0,99)
+print (num)
+# el programa selecciona aleatoriamente un numero entero entre el rango dado por la funcion randint y luego lo imprime
+
+#Practica 2 Ejercicio 9
+import random
+num= int(input("ingrese un numero "))
+dado= random.randint(1,6)
+while dado!= num:
+    if num<1 or num>6:
+        print("ingrese un numero valido ")
+    num= int(input("ingrese un numero "))
+print ("el numero es correcto")
+
+#Practica 2 Ejercicio 10
+import random
+cpu= random.randint(1,3)
+num=0
+print("elija una opcion: ")
+print("1-piedra")
+print("2-papel")
+print("3-tijera")
+num=int(input("-"))
+if num== cpu:
+    print("empate")
+if num==1 and cpu==3:
+    print("ganaste")
+if num==2 and cpu==1:
+    print("ganaste")
+if num==3 and cpu==2:
+    print("ganaste")
+if num==1 and cpu==2:
+    print("perdiste")
+if num==2 and cpu==3:
+    print("perdiste")
+if num==3 and cpu==1:
+    print("perdiste")
+
+#Practica 2 Ejercicio 6 (moduralizado)
+def iteracion():
+    suma=0
+    total=0
+    numero= int(input("ingrese un numero "))
+    for suma in range(numero):
+        suma= suma + 1
+        total= total+ suma
+    print("la suma es ")
+    print(total)
+
+def formula():
+    total=0
+    numero= int(input("ingrese un numero "))
+    total= int((numero*(numero+1))/2)
+    print("la suma es ")
+    print(total)
+
+iteracion()
+formula()
+
+#Practica 2 Ejercicio 6 (moduralizado con variable global)
+total= 0
+def iteracion():
+    suma=0
+    global total
+    numero= int(input("ingrese un numero "))
+    for suma in range(numero):
+        suma= suma + 1
+        total= total+ suma
+    print("la suma es ")
+    print(total)
+
+def formula():
+    global total
+    numero= int(input("ingrese un numero "))
+    total= int((numero*(numero+1))/2)
+    print("la suma es ")
+    print(total)
+    
+iteracion()
+formula()
