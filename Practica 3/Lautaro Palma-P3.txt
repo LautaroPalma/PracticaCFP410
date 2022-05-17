@@ -1,0 +1,77 @@
+#Practica 3 Ejercicio 1
+def saludo (nom):
+    print(f"¡Hola {nom}!")
+nombre=input("ingrese nombre: ")
+saludo(nombre)
+
+#Practica 3 Ejercicio 2
+def cuadrado(num): 
+    num=int(num)
+    num*=num
+    print(num)
+numero=input("Ingrese un numero: ")
+cuadrado(numero)
+
+#Practica 3 Ejercicio 3
+def mayor(n1,n2):
+	if n1>n2:
+		return n1
+	else:
+		return n2
+num1=int=input("ingrese un numero: ")
+num2=int=input("ingrese otro numero: ")
+print(f"el mayor es {mayor(num1,num2)}")
+
+#Practica 3 Ejercicio 4
+def esCero(unNumero):
+    if (unNumero==0):
+        return True
+    else:
+	    return False
+unNumero=int=input("Ingrese numero: ")
+if esCero(unNumero):
+    print ("Es cero")
+else:
+    print ("No es cero")
+
+#Practica 3 Ejercicio 5
+def sumarIva(valor,iva=21):
+    return valor + (valor*((iva/100)))
+
+print(f"el total es {sumarIva(100)}")
+
+#Practica 3 Ejercicio 6
+def menor(numero,numMenor):
+    if numero<= numMenor:
+        numMenor=numero
+    return numMenor
+def mayor(numero, numMayor):
+    if numero>= numMayor:
+        numMayor=numero
+    return numMayor
+numero=int(input("ingrese un numero: "))
+numMenor=999999
+numMayor=0
+while (numero>0):
+    numMayor=mayor(numero,numMayor)
+    numMenor=menor(numero,numMenor)
+    numero=int(input("ingrese un numero: "))
+print(f"el numero menor es {numMenor}")
+print(f"el numero mayor es {numMayor}")
+
+#Practica 3 Ejercicio 7
+#Practica 2 Ejercicio 9
+def nd():
+    import random
+    dado= random.randint(1,6)
+def jd(num):
+    while dado!= num:
+        if num<1 or num>6:
+            print("ingrese un numero valido ")
+        num= int(input("ingrese un numero "))
+    print ("el numero es correcto")
+nd()
+num= int(input("ingrese un numero "))
+jd(num)
+
+
