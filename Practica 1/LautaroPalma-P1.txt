@@ -1,0 +1,66 @@
+Practica 1 Lautaro Palma
+
+#Practica 1 Ejercicio 1
+print ("¡Hola mundo!")
+
+#Practica 1 Ejercicio 2
+mensaje= "¡Hola mundo!"
+print (mensaje)
+
+#Practica 1 Ejercicio 3
+mensaje= ("!Hola mundo¡ ")
+contador= 0
+while contador <3:
+    print(mensaje)
+    contador += 1
+
+#Practica 1 Ejercicio 4
+num1 = 2 
+num2 = 4
+print ("La multiplicacion es: ")
+print (num1 * num2)
+
+#Practica 1 Ejercicio 4
+num1 = 2 
+num2 = 4
+print ("La resta es: ")
+print (num1 - num2)
+
+#Practica 1 Ejercicio 5
+nombre = input ("ingrese su nombre: ")
+print ( "Hola " + nombre)
+#Funiona bien y no le haria ningun cambio
+
+#Practica 1 Ejercicio 6
+nombre = input ( " Ingrese su nombre: ")
+print ("¡Hola " + nombre + "!")
+
+#Practica 1 Ejercicio 7
+num1 = 2
+num2 = 1
+if (num1 > num2):
+    print("el numero 1 es mayor")
+else:
+    print ("el numero 2 es mayor")
+
+#Practica 1 Ejercicio 8
+num1= int(input ("Ingrese un numero "))
+num2= int(input ("ingrese otro numero "))
+print ("El resultado es: " )
+print (num1+ num2)
+
+#Practica 1 Ejercicio 9
+num1 = int(input("Horas trabajadas "))
+num2 = int(input("Coste por hora "))
+print ("La paga correspondiente es: ")
+print (num1*num2)
+
+#Practica 1 Ejercicio 10
+num1= 1000
+num2= int(input("Igrese el monto a extraer: "))
+if num1> num2:
+    print("Ha extraido: ")
+    print(num1)
+    print(num1-num2)
+else:
+    print("No hay suficiente saldo para completar la operacion")
